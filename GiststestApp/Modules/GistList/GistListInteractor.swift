@@ -18,6 +18,9 @@ final class GistListInteractor: Interactor {
 extension GistListInteractor: GistListInteractorApi {
     func updateList() {
         //TODO:
+        NetworkService.GETRequest("/gists/public", parameters: nil) { (data, error) in
+            
+        }
     }
     
     func item(at indexPath: IndexPath) -> GistModel? {
