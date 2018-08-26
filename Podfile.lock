@@ -1,0 +1,16 @@
+PODS:
+  - Viperit (1.1.0)
+
+DEPENDENCIES:
+  - Viperit
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Viperit
+
+SPEC CHECKSUMS:
+  Viperit: 276b9f0943edb5436fbff008abd8756004149814
+
+PODFILE CHECKSUM: b8dcfb0c17a9aafe6a6207cdc6ddb012fc973f18
+
+COCOAPODS: 1.5.3

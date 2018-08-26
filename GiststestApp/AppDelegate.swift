@@ -15,7 +15,12 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
-        // Override point for customization after application launch.
+        
+        let window = UIApplication.shared.windows.first
+        
+        let gistListModule = AppModules.gistList.build()
+        gistListModule.router.show(inWindow: window!)
+        
         return true
     }
 

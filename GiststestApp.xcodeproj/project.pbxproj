@@ -7,14 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		139F4DFCE72D25C7E87050E4 /* Pods_GiststestApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5A1441A92380285309788672 /* Pods_GiststestApp.framework */; };
 		37672F862132D16800557F1E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F852132D16800557F1E /* AppDelegate.swift */; };
 		37672F882132D16800557F1E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F872132D16800557F1E /* ViewController.swift */; };
 		37672F8B2132D16800557F1E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37672F892132D16800557F1E /* Main.storyboard */; };
 		37672F8D2132D16C00557F1E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 37672F8C2132D16C00557F1E /* Assets.xcassets */; };
 		37672F902132D16C00557F1E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37672F8E2132D16C00557F1E /* LaunchScreen.storyboard */; };
+		37672FA02132D38700557F1E /* GistList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 37672F992132D38700557F1E /* GistList.storyboard */; };
+		37672FA12132D38700557F1E /* GistListDisplayData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9A2132D38700557F1E /* GistListDisplayData.swift */; };
+		37672FA22132D38700557F1E /* GistListPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9B2132D38700557F1E /* GistListPresenter.swift */; };
+		37672FA32132D38700557F1E /* GistListRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9C2132D38700557F1E /* GistListRouter.swift */; };
+		37672FA42132D38700557F1E /* GistListModuleApi.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9D2132D38700557F1E /* GistListModuleApi.swift */; };
+		37672FA52132D38700557F1E /* GistListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9E2132D38700557F1E /* GistListInteractor.swift */; };
+		37672FA62132D38700557F1E /* GistListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9F2132D38700557F1E /* GistListView.swift */; };
+		37672FAA2132D6E600557F1E /* AppModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672FA92132D6E600557F1E /* AppModules.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0BE4DCA12FFFBCE7FA6A7D23 /* Pods-GiststestApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiststestApp.debug.xcconfig"; path = "Pods/Target Support Files/Pods-GiststestApp/Pods-GiststestApp.debug.xcconfig"; sourceTree = "<group>"; };
+		1DB158412591F62E7EBDE7BC /* Pods-GiststestApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GiststestApp.release.xcconfig"; path = "Pods/Target Support Files/Pods-GiststestApp/Pods-GiststestApp.release.xcconfig"; sourceTree = "<group>"; };
 		37672F822132D16800557F1E /* GiststestApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GiststestApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		37672F852132D16800557F1E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		37672F872132D16800557F1E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +33,15 @@
 		37672F8C2132D16C00557F1E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		37672F8F2132D16C00557F1E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		37672F912132D16C00557F1E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		37672F992132D38700557F1E /* GistList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = GistList.storyboard; sourceTree = "<group>"; };
+		37672F9A2132D38700557F1E /* GistListDisplayData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListDisplayData.swift; sourceTree = "<group>"; };
+		37672F9B2132D38700557F1E /* GistListPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListPresenter.swift; sourceTree = "<group>"; };
+		37672F9C2132D38700557F1E /* GistListRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListRouter.swift; sourceTree = "<group>"; };
+		37672F9D2132D38700557F1E /* GistListModuleApi.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListModuleApi.swift; sourceTree = "<group>"; };
+		37672F9E2132D38700557F1E /* GistListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListInteractor.swift; sourceTree = "<group>"; };
+		37672F9F2132D38700557F1E /* GistListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListView.swift; sourceTree = "<group>"; };
+		37672FA92132D6E600557F1E /* AppModules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModules.swift; sourceTree = "<group>"; };
+		5A1441A92380285309788672 /* Pods_GiststestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiststestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +49,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				139F4DFCE72D25C7E87050E4 /* Pods_GiststestApp.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +61,8 @@
 			children = (
 				37672F842132D16800557F1E /* GiststestApp */,
 				37672F832132D16800557F1E /* Products */,
+				3AD42FDD097C9E356B301EE8 /* Pods */,
+				39CC2C934F437B5C94A1A335 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +77,7 @@
 		37672F842132D16800557F1E /* GiststestApp */ = {
 			isa = PBXGroup;
 			children = (
+				37672F972132D34D00557F1E /* Modules */,
 				37672F852132D16800557F1E /* AppDelegate.swift */,
 				37672F872132D16800557F1E /* ViewController.swift */,
 				37672F892132D16800557F1E /* Main.storyboard */,
@@ -64,6 +88,46 @@
 			path = GiststestApp;
 			sourceTree = "<group>";
 		};
+		37672F972132D34D00557F1E /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				37672FA92132D6E600557F1E /* AppModules.swift */,
+				37672F982132D36200557F1E /* GistList */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		37672F982132D36200557F1E /* GistList */ = {
+			isa = PBXGroup;
+			children = (
+				37672F992132D38700557F1E /* GistList.storyboard */,
+				37672F9A2132D38700557F1E /* GistListDisplayData.swift */,
+				37672F9B2132D38700557F1E /* GistListPresenter.swift */,
+				37672F9C2132D38700557F1E /* GistListRouter.swift */,
+				37672F9D2132D38700557F1E /* GistListModuleApi.swift */,
+				37672F9E2132D38700557F1E /* GistListInteractor.swift */,
+				37672F9F2132D38700557F1E /* GistListView.swift */,
+			);
+			path = GistList;
+			sourceTree = "<group>";
+		};
+		39CC2C934F437B5C94A1A335 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5A1441A92380285309788672 /* Pods_GiststestApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3AD42FDD097C9E356B301EE8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0BE4DCA12FFFBCE7FA6A7D23 /* Pods-GiststestApp.debug.xcconfig */,
+				1DB158412591F62E7EBDE7BC /* Pods-GiststestApp.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +135,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 37672F942132D16C00557F1E /* Build configuration list for PBXNativeTarget "GiststestApp" */;
 			buildPhases = (
+				A57CE9298429D85AC401514E /* [CP] Check Pods Manifest.lock */,
 				37672F7E2132D16800557F1E /* Sources */,
 				37672F7F2132D16800557F1E /* Frameworks */,
 				37672F802132D16800557F1E /* Resources */,
+				63E515071C239AF2CD28009E /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +189,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				37672F902132D16C00557F1E /* LaunchScreen.storyboard in Resources */,
+				37672FA02132D38700557F1E /* GistList.storyboard in Resources */,
 				37672F8D2132D16C00557F1E /* Assets.xcassets in Resources */,
 				37672F8B2132D16800557F1E /* Main.storyboard in Resources */,
 			);
@@ -130,13 +197,59 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		63E515071C239AF2CD28009E /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-GiststestApp/Pods-GiststestApp-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Viperit/Viperit.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Viperit.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-GiststestApp/Pods-GiststestApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A57CE9298429D85AC401514E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GiststestApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		37672F7E2132D16800557F1E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				37672F882132D16800557F1E /* ViewController.swift in Sources */,
+				37672FA42132D38700557F1E /* GistListModuleApi.swift in Sources */,
+				37672FA22132D38700557F1E /* GistListPresenter.swift in Sources */,
+				37672FA62132D38700557F1E /* GistListView.swift in Sources */,
 				37672F862132D16800557F1E /* AppDelegate.swift in Sources */,
+				37672FA32132D38700557F1E /* GistListRouter.swift in Sources */,
+				37672FAA2132D6E600557F1E /* AppModules.swift in Sources */,
+				37672FA52132D38700557F1E /* GistListInteractor.swift in Sources */,
+				37672FA12132D38700557F1E /* GistListDisplayData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -278,6 +391,7 @@
 		};
 		37672F952132D16C00557F1E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0BE4DCA12FFFBCE7FA6A7D23 /* Pods-GiststestApp.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -296,6 +410,7 @@
 		};
 		37672F962132D16C00557F1E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1DB158412591F62E7EBDE7BC /* Pods-GiststestApp.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
