@@ -21,6 +21,8 @@
 		37672FA52132D38700557F1E /* GistListInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9E2132D38700557F1E /* GistListInteractor.swift */; };
 		37672FA62132D38700557F1E /* GistListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672F9F2132D38700557F1E /* GistListView.swift */; };
 		37672FAA2132D6E600557F1E /* AppModules.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672FA92132D6E600557F1E /* AppModules.swift */; };
+		37672FAD2132DAF200557F1E /* UploadingResult.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672FAC2132DAF200557F1E /* UploadingResult.swift */; };
+		37672FB02132DC1B00557F1E /* GistModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37672FAF2132DC1B00557F1E /* GistModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -41,6 +43,8 @@
 		37672F9E2132D38700557F1E /* GistListInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListInteractor.swift; sourceTree = "<group>"; };
 		37672F9F2132D38700557F1E /* GistListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistListView.swift; sourceTree = "<group>"; };
 		37672FA92132D6E600557F1E /* AppModules.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppModules.swift; sourceTree = "<group>"; };
+		37672FAC2132DAF200557F1E /* UploadingResult.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UploadingResult.swift; sourceTree = "<group>"; };
+		37672FAF2132DC1B00557F1E /* GistModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GistModel.swift; sourceTree = "<group>"; };
 		5A1441A92380285309788672 /* Pods_GiststestApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_GiststestApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -78,6 +82,8 @@
 			isa = PBXGroup;
 			children = (
 				37672F972132D34D00557F1E /* Modules */,
+				37672FAE2132DBF500557F1E /* Models */,
+				37672FAB2132DAB200557F1E /* Enums */,
 				37672F852132D16800557F1E /* AppDelegate.swift */,
 				37672F872132D16800557F1E /* ViewController.swift */,
 				37672F892132D16800557F1E /* Main.storyboard */,
@@ -109,6 +115,22 @@
 				37672F9F2132D38700557F1E /* GistListView.swift */,
 			);
 			path = GistList;
+			sourceTree = "<group>";
+		};
+		37672FAB2132DAB200557F1E /* Enums */ = {
+			isa = PBXGroup;
+			children = (
+				37672FAC2132DAF200557F1E /* UploadingResult.swift */,
+			);
+			path = Enums;
+			sourceTree = "<group>";
+		};
+		37672FAE2132DBF500557F1E /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				37672FAF2132DC1B00557F1E /* GistModel.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 		39CC2C934F437B5C94A1A335 /* Frameworks */ = {
@@ -245,6 +267,8 @@
 				37672FA42132D38700557F1E /* GistListModuleApi.swift in Sources */,
 				37672FA22132D38700557F1E /* GistListPresenter.swift in Sources */,
 				37672FA62132D38700557F1E /* GistListView.swift in Sources */,
+				37672FB02132DC1B00557F1E /* GistModel.swift in Sources */,
+				37672FAD2132DAF200557F1E /* UploadingResult.swift in Sources */,
 				37672F862132D16800557F1E /* AppDelegate.swift in Sources */,
 				37672FA32132D38700557F1E /* GistListRouter.swift in Sources */,
 				37672FAA2132D6E600557F1E /* AppModules.swift in Sources */,
