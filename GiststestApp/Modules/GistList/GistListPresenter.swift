@@ -12,7 +12,8 @@ import Viperit
 // MARK: - GistListPresenter Class
 final class GistListPresenter: Presenter {
     
-    override func setupView(data: Any) {
+    override func viewHasLoaded() {
+        super.viewHasLoaded()
         updateInitialazed()
     }
 }
@@ -30,7 +31,13 @@ extension GistListPresenter: GistListPresenterApi {
     }
     
     func didSelectItem(_ indexPath: IndexPath) {
-        router.showGist(interactor.item(at: indexPath))
+        
+        if let gistItem = interactor.item(at: indexPath) {
+            router.showGist(gistItem)
+        } else {
+            view.showError(NSError(domain: "There is not item", code: 999, userInfo: nil))
+        }
+        
     }
     
     func updateInitialazed() {

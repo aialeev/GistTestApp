@@ -30,5 +30,5 @@ protocol GistListPresenterApi: PresenterProtocol {
 //MARK: - GistListInteractor API
 protocol GistListInteractorApi: InteractorProtocol {
     func updateList()
-    func item(at indexPath:IndexPath) -> GistModel
+    func item(at indexPath:IndexPath) -> GistModel?
 }

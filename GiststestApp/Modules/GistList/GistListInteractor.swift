@@ -11,10 +11,19 @@ import Viperit
 
 // MARK: - GistListInteractor Class
 final class GistListInteractor: Interactor {
+    var innerGistList: [GistModel]?
 }
 
 // MARK: - GistListInteractor API
 extension GistListInteractor: GistListInteractorApi {
+    func updateList() {
+        //TODO:
+    }
+    
+    func item(at indexPath: IndexPath) -> GistModel? {
+        return innerGistList?[indexPath.row]
+    }
+    
 }
 
 // MARK: - Interactor Viper Components Api

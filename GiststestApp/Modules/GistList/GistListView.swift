@@ -15,7 +15,17 @@ final class GistListView: UserInterface {
 
 //MARK: - GistListView API
 extension GistListView: GistListViewApi {
+    func setLoadingState(_ isLoading: Bool) {
+        //TODO:
+    }
     
+    func setDataList(_ list: [GistModel]) {
+        //TODO:
+    }
+    
+    func showError(_ error: Error) {
+        //TODO:
+    }
 }
 
 // MARK: - GistListView Viper Components API

@@ -15,6 +15,9 @@ final class GistListRouter: Router {
 
 // MARK: - GistListRouter API
 extension GistListRouter: GistListRouterApi {
+    func showGist(_ gist: GistModel) {
+        
+    }
 }
 
 // MARK: - GistList Viper Components
