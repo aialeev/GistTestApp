@@ -16,7 +16,7 @@ final class GistListRouter: Router {
 // MARK: - GistListRouter API
 extension GistListRouter: GistListRouterApi {
     func showGist(_ gist: GistModel) {
-        
+        print(gist)
     }
 }
 

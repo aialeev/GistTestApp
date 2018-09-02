@@ -11,6 +11,14 @@ import Viperit
 
 //MARK: GistListView Class
 final class GistListView: UserInterface {
+    
+    @IBOutlet weak var tableView: UITableView!
+    
+    override func viewDidLoad() {
+        super.viewDidLoad()
+        displayData.prepareTable(tableView)
+        tableView.delegate = self
+    }
 }
 
 //MARK: - GistListView API
@@ -20,7 +28,7 @@ extension GistListView: GistListViewApi {
     }
     
     func setDataList(_ list: [GistModel]) {
-        //TODO:
+        displayData.setData(list)
     }
     
     func showError(_ error: Error) {
@@ -35,5 +43,11 @@ private extension GistListView {
     }
     var displayData: GistListDisplayData {
         return _displayData as! GistListDisplayData
+    }
+}
+
+extension GistListView: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        presenter.didSelectItem(indexPath)
     }
 }

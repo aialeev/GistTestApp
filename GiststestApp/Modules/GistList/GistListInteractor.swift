@@ -25,7 +25,7 @@ extension GistListInteractor: GistListInteractorApi {
             } else if let jsonData = data {
                 do {
                     let array = try JSONDecoder().decode([Gist].self, from: jsonData)
-                    
+                    self.innerGistList = array
                     self.wrapUpdateDidFinished(.success(array))
                 } catch {
                     self.wrapUpdateDidFinished(.fail(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "Parsing error"])))
