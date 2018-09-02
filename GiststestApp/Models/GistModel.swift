@@ -35,7 +35,7 @@ struct Gist: GistModel, Decodable {
 }
 
 struct Owner: Decodable {
-    var id: String
+    var id: Int
     var login: String
     var avatar_url: String
 }

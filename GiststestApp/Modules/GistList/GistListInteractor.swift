@@ -20,11 +20,28 @@ extension GistListInteractor: GistListInteractorApi {
         //TODO:
         NetworkService.GETRequest("/gists/public", parameters: nil) { (data, error) in
             
+            if error != nil {
+                self.wrapUpdateDidFinished(.fail(error!))
+            } else if let jsonData = data {
+                do {
+                    let array = try JSONDecoder().decode([Gist].self, from: jsonData)
+                    
+                    self.wrapUpdateDidFinished(.success(array))
+                } catch {
+                    self.wrapUpdateDidFinished(.fail(NSError(domain: "", code: 0, userInfo: [NSLocalizedDescriptionKey : "Parsing error"])))
+                }
+            }
         }
     }
     
     func item(at indexPath: IndexPath) -> GistModel? {
         return innerGistList?[indexPath.row]
+    }
+    
+    private func wrapUpdateDidFinished(_ result: UploadingResult<[GistModel]>){
+        DispatchQueue.main.async {
+            self.presenter.updateDidFinised(result)
+        }
     }
     
 }
