@@ -18,13 +18,27 @@ final class GistListView: UserInterface {
         super.viewDidLoad()
         displayData.prepareTable(tableView)
         tableView.delegate = self
+        configureRefreshControl()
+    }
+    
+    private func configureRefreshControl() {
+        tableView.refreshControl = UIRefreshControl()
+        tableView.refreshControl?.addTarget(self, action: #selector(refreshControlAction), for: .valueChanged)
+    }
+    
+     @objc private func refreshControlAction() {
+        presenter.updateInitialazed()
     }
 }
 
 //MARK: - GistListView API
 extension GistListView: GistListViewApi {
     func setLoadingState(_ isLoading: Bool) {
-        //TODO:
+        if isLoading {
+            tableView.refreshControl?.beginRefreshing()
+        } else {
+            tableView.refreshControl?.endRefreshing()
+        }
     }
     
     func setDataList(_ list: [GistModel]) {

@@ -31,13 +31,11 @@ extension GistListPresenter: GistListPresenterApi {
     }
     
     func didSelectItem(_ indexPath: IndexPath) {
-        
         if let gistItem = interactor.item(at: indexPath) {
             router.showGist(gistItem)
         } else {
             view.showError(NSError(domain: "There is not item", code: 999, userInfo: nil))
         }
-        
     }
     
     func updateInitialazed() {
